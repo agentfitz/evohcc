@@ -1,0 +1,828 @@
+/*
+Theme Name: Evohcc
+Theme URI: http://example.com/example/
+Description: A search engine optimized website framework for WordPress.
+Author: Brian FitzGerald
+Author URI: http://example.com/
+Version: 1.0
+Tags: Comma-separated tags that describe your theme
+
+Your theme can be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+ 
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+*/
+html {
+}
+
+body {
+  font: .625em/1em Verdana, Arial, Helvetica, sans-serif;
+  color: #5a5a5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+acronym {
+  cursor: help;
+}
+
+p {
+  font: 1.2em/2em Verdana, Arial, Helvetica, sans-serif;
+  margin: 5px 0 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1 {
+  font: 2.2em/1.4em georgia, "Times New Roman", Times, serif;
+  color: #0a1d58;
+}
+
+h2 {
+  font: bold 1.6em/1.4em georgia, "Times New Roman", Times, serif;
+  color: #0a1d58;
+}
+
+h3 {
+  color: #e15501;
+  display: inline;
+  text-transform: uppercase;
+  font: bold 1em Verdana, Arial, Helvetica, sans-serif;
+}
+
+body#web-resources div#maincontent li,
+body#practice-considerations div#maincontent li,
+body#services div#maincontent li,
+body#resources div#maincontent li,
+body#speaking-engagements div#maincontent li,
+body#contact div#maincontent ul#information li {
+  list-style: square;
+  color: #e15501;
+}
+
+/* ------------------------ Main Nav ------------------------------ */
+div#nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 16px;
+  margin: 0px 32px 0 0;
+  color: #fff;
+  text-decoration: none;
+  /* display: inline-block; */
+  line-height: 1em;
+}
+
+div#nav li:first-child {
+  margin-left: 20px;
+}
+
+div#nav a:hover {
+  color: #e15501;
+  background: url(images/blacktriangle.png) no-repeat bottom;
+}
+
+div#nav li.current-menu-item a {
+  color: #e15501;
+  background: url(images/blacktriangle.png) no-repeat bottom;  	
+}
+
+a {
+  color: #0a1d58;
+}
+
+a:hover {
+  color: #e15501;
+}
+
+
+/* ------------------------ Side Nav ------------------------------ */
+
+#menu-side-nav a {
+  display: block;
+  color: #999; 
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+#menu-side-nav li.current-menu-item a {	
+  color: #fff; 
+  background: #0a1d58;
+}
+
+body#publications a#publicationslink,
+body#articles a#articleslink,
+body#testimonials a#testimonialslink,
+body#webresources a#webresourceslink,
+body#speaking-engagements a#eventslink {
+  color: #fff; 
+  background: #0a1d58;
+}
+
+#menu-side-nav a:hover {
+  color: #fff; 
+  background: #e15501;
+}
+
+
+/* ------------------------ Footer Nav ------------------------------ */
+div#footerinner a {
+  color: #0a1d58;
+}
+div#footerinner a:hover {
+  color: #e15501;
+}
+
+div#maincontent h1 {
+  margin: 0 0 10px 0;
+}
+
+div#maincontent h2 {
+  margin: 20px 0 10px 0;
+}
+
+
+
+/* ------------------------ Header ------------------------------ */
+
+div#outerheader {
+  background: #fff url(images/header_bg.jpg);
+  height: 65px;
+}
+
+div#headershadow {
+  width: 820px;
+  background: #fff url(images/header_bg.jpg);
+  margin: 0 auto;
+  height: 65px;
+}
+
+div#innerheader {
+  background: #fff url(images/header_bg.jpg);
+  height: 65px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#evologo {
+  padding: 12px 0 0 16px;
+}
+
+/* ------------------------ Masthead ------------------------------ */
+
+div#outermasthead {
+  background: #0a1d58 url(images/masthead_bg.jpg);
+  height: 120px;
+}
+
+div#mastheadshadow {
+  width: 820px;
+  background: #0a1d58 url(images/masthead_bg.jpg);
+  margin: 0 auto;
+  height: 120px;
+}
+
+div#innermasthead {
+  background: #0a1d58 url(images/masthead_bg.jpg);
+  width: 800px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+div#innermastheadleft {
+  width: 0px;
+  float: left;
+  background: #e15501;
+  margin-left: 0px;
+}
+
+#loginform {
+  padding: 10px;
+  color: #fff;
+}
+
+#loginform table td {
+  padding: 2px 0;
+}
+
+#loginform table th {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+input {
+  background: #ebf0ff;
+}
+
+#loginbutton {
+  background: #fff;
+  color: #0a1d58;
+  font: .9em Verdana, Arial, Helvetica, Sans-serif;
+  text-transform: uppercase;
+}
+
+div#mastheadimage {
+  margin: 0 auto;
+  width: 770px;
+}
+
+
+
+
+/* ------------------------ Main Content ------------------------------ */
+
+div#maincontentouter {
+  background: #fff;
+}
+div#maincontentshadow {
+  width: 820px;
+  background: #fff url(images/maincontent_bg.jpg);
+  margin: 0 auto;
+}
+div#maincontentinner {
+  background: #fff;
+  width: 800px;
+  margin: 0 auto;
+	overflow: auto;
+}
+div#maincontent {
+  background: #fff;
+  width: 510px;
+  float: left;
+  padding: 20px; 
+  margin: 0 0 60px 0;
+	min-height: 400px;
+}
+
+div#maincontent div#testimonialsholder h1 {
+  margin: 12px 0 0 0;
+}
+
+div#maincontent ul {
+  list-style: none;
+  padding: 10px 0 10px;
+}
+
+div#maincontent ul li {
+  font: 1.2em/2em Verdana, Arial, Helvetica, sans-serif;
+  color: #5a5a5a;
+}
+
+.plussign {
+  color: #e15501;
+}
+
+div.event ul {
+  margin: 0 0 12px;
+}
+
+div.event ul li h3 {
+  font-size: .8em;
+}
+
+div#maincontent h3.quoted {
+  margin: 0;
+  color: #0a1d58;
+  font: italic 1.4em times "times new roman" serif;
+}
+
+div.formBlock table td {
+  padding: 15px 0;
+  font: 1em Verdana, Arial, Helvetica, sans-serif;
+}
+
+div.formBlock table td {
+  border-bottom: 1px solid #eee;
+}
+
+div.formBlock .formField {
+  font: 1.1em Verdana, Arial, Helvetica, sans-serif;
+  padding: 4px;
+  width: 250px;
+}
+
+div.formBlock .formTextArea{
+  font: 1.1em Verdana, Arial, Helvetica, sans-serif;
+  padding: 4px;
+  width: 220px;
+}
+
+div.formBlock .formDropDown {
+  font: bold 1.1em Verdana, Arial, Helvetica, sans-serif;
+  padding: 2px;
+  width: 280px;
+}
+
+/* ------------------------------ Sidebar ----------------------------------*/
+
+div#sidebar {
+  background: #fff;
+  width: 250px;
+  float: right;
+  text-align: left;
+}
+
+div#news {
+  width: 237px;
+  height: 252px;
+  background: #fff url(images/news_bg.jpg) no-repeat;
+  margin: 20px 0 0 0;
+}
+
+
+#news h2 { font: 18px Verdana, Arial, Helvetica, sans-serif; }
+#news h3 { font-size: 11px; font-weight: normal; text-transform: uppercase; }
+
+#news h2, #news h3 { position: relative; top: 12px; left: 12px; }
+
+div#sidebar {
+  color: #5a5a5a;
+}
+
+div#sidebar ul li{
+  height: 3em;
+}
+
+div#testimonialholder {
+  border: 1px solid #ccc;
+  margin: 30px 0;
+  text-decoration: none;
+  width: 475px;
+  padding: 2px;
+  height: 127px;
+}
+
+div#testimonialimage {
+  width: 275px;
+  float: left;
+  height: 127px;
+}
+
+body#services div#testimonialimage, body#resources div#testimonialimage {
+  width: 225px;
+  height: 127px;
+}
+
+div#testimonialquote {
+  background: url(images/testimonial_thumb_bg.jpg) no-repeat;
+  width: 200px;
+  height: 127px;
+  float: right;
+}
+
+body#services div#testimonialquote, body#resources div#testimonialquote {
+  background: url(images/testimonial_thumb_big_bg.jpg) no-repeat;
+  width: 250px;
+}
+
+div#testimonialholder p.quote {
+  font: bold 1.1em/1.8em verdana, arial, helvetica, sans-serif;
+  color: #fff;
+  padding: 10px 10px 0;
+  margin: 15px 0 0 0;
+}
+
+div#testimonialholder h1 {
+  font: bold 1em/1.8em verdana, arial, helvetica, sans-serif;
+  color: #fff;
+  padding: 0 10px;
+  margin: 0;
+}
+
+body#testimonials div#imageholder {
+  width: 219px;
+  height: 226px;
+}
+
+body#testimonials div#imageholder p {
+  font: 1em helvetica, arial, verdana, sans-serif;
+  width: 400px;
+  padding: 4px 0 0 0;
+  margin: 0;
+}
+
+div#news ul {
+  padding: 25px 7px 20px 4px;
+  list-style: none;
+}
+
+div#news ul li:nth-child(even) {
+  background: #fff;
+}
+
+div#news ul li:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+div#extras {
+  width: 237px;
+  height: 252px;
+  background: #fff url(images/extras_bg.jpg) no-repeat;
+  margin: 20px 0 0 0;
+}
+
+div#extras ul {
+  padding: 60px 7px 20px 4px;
+  list-style: none;
+}
+
+div#extras ul li.oddrow {
+  background: #fff;
+}
+
+div#extras ul li.evenrow {
+  background: #f8f8f8;
+}
+
+
+/* ------------------------------ Footer ----------------------------------*/
+
+div#footerouter {
+  background: #eaedf0 url(images/footer_bg.jpg) repeat-x;
+  clear: both;
+	overflow: auto;
+	width: 100%;
+}
+
+div#footershadow {
+  width: 820px;
+  background: #eaedf0 url(images/footer_bg.jpg) repeat-x;
+  margin: 0 auto; 
+}
+
+div#footerinner {
+  background: #eaedf0 url(images/footer_bg.jpg) repeat-x;
+  width: 800px;
+  margin: 0 auto;
+	height: 100px;
+}
+
+div#nav ul {
+  list-style: none;
+}
+
+div#nav ul li {
+  display: inline;
+  color: #fff;
+}
+
+div#footerinner ul li {
+  display: inline;
+  padding: 0 10px 0;
+  border-right: 1px solid #0a1d58;
+  color: #0a1d58;
+}
+
+div#footerinner ul li.first {
+  padding-left: 0px;
+}
+
+div#footerinner ul li.last {
+  border-right: 0;
+}
+
+div#footerinner ul {
+  padding: 20px 20px 0 20px;
+}
+
+div#footerinner ul#contactlist {
+  border: 0px solid red;
+  float: left;
+  width: 490px;
+}
+
+div#footerinner ul#standardslist {
+  display: inline;
+  text-align: right;
+  float: right;
+  width: 200px;
+  border: 0px solid blue;
+  padding: 14px 0 0 0;
+  margin: 0;
+}
+
+ul#inlinestandardslist {
+  margin: 14px 0 50px 0;
+}
+
+ul#inlinestandardslist li {
+  float: left;
+  display: inline;
+}
+
+ul#inlinestandardslist li.css {
+  padding-left: 12px;
+}
+
+body#standards h2 {
+  clear: both;
+}
+
+
+div#footerinner ul#standardslist li {
+  border: none;
+}
+
+div#navshadow {
+  width: 820px;
+  margin: 0 auto;
+  background: #fff url(images/navcontainer_bg.gif) repeat-x;
+}
+
+div#navcontainer {
+  background: #fff url(images/navcontainer_bg.gif) repeat-x;
+  margin: 0 auto;
+  width: 800px;
+  padding: 10px 0;
+  height: 30px;
+}
+
+div#outernav {
+  background: #fff url(images/navcontainer_bg.gif) repeat-x;
+}
+
+.border {
+  padding: 2px;
+  border: 1px solid #ccc;
+  margin: 0;
+}
+
+.standardsborder {
+  padding: 2px;
+  border: 1px solid #ccc;
+  margin: 25px 0;
+  width: 475px;
+  height: 205px;
+}
+
+.partnerlogo {
+  margin: 25px 0 10px 0;
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+
+div#testimonialsholder p.quote, div.publications p.title {
+  font: italic 1.7em/1.5em times "times new roman" serif;
+  margin-top: 10px;
+}
+
+div#testimonialsholder img, div.publications img {
+  padding: 2px;
+  border: 1px solid #ccc;  
+}
+
+div#testimonialsholder img.noborder, div#publications img.noborder {
+  padding: 0;
+  border: 0;  
+}
+
+div.testimonial, div.publications {
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0 20px;
+}
+
+.testimonial q { font-size: 22px; font-style: italic; }
+
+div.event {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+div#testimonialsholder p, div#publications p {
+  margin: 22px 0;
+}
+
+.listitem {
+  color: #5a5a5a;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.disclaimer {
+  font-size: .9em;
+}
+
+.alert {
+  color: red;
+}
+
+.submitButton {
+  color: white;
+  background: #0a1d58;
+  padding: 5px;
+  font: bold .9em Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.standardButton {
+  background: url("images/standardButton.gif") repeat-x bottom;
+  border-right: #525552 1px solid;
+  border-top: #e0e0e0 1px solid;
+  font: bold 11px arial;
+  border-left: #e0e0e0 1px solid;
+  border-bottom: #000000 1px solid;
+  padding: 4px 6px;
+  min-width: 100px;
+}
+
+.buttonBody {
+  text-align: center;
+}
+
+.standardButton:hover {
+  background: url("images/standardButtonHover.gif") repeat-x bottom;
+}
+
+
+
+/* BUTTONS */
+
+.buttons a, .buttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background:#fff url("images/standardButton.gif") repeat-x bottom;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:11px;
+    line-height:16px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#000;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+    text-align: center;
+}
+
+.buttons, .buttons .buttonRight {
+    margin: 0;
+}
+
+.addJobNoteCell {
+    border-top: 1px solid #ccc;
+}
+
+.buttons button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.buttons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+
+/*    <a href="##" class="negative">
+        <img src="images/webIcons/cancel.gif" alt=""/>
+        Cancel
+    </a>
+
+    <button type="submit" class="positive">
+        <img src="images/webIcons/check.gif" alt=""/> 
+        Save
+    </button>*/
+
+
+/* STANDARD */
+
+button:hover, .buttons a:hover{
+    background: #fff url("images/standardButtonHover.gif") repeat-x bottom;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+/* POSITIVE */
+
+button.positive, .buttons a.positive{
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+.buttons a.positive:hover, button.positive:hover{
+    background:#fff url("images/standardButtonHoverPos.gif") repeat-x bottom;
+}
+
+/* NEGATIVE */
+
+.buttons a.negative, button.negative{
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.buttons a.negative:hover, button.negative:hover{
+    background:#fff url("images/standardButtonHoverNeg.gif") repeat-x bottom;
+}
+
+
+span.quotationMark { font: 72px/42px georgia, times, serif; color: #aaa; }
+p.quote { font: italic 15px/26px georgia, times, serif; }
+p.quoteInfo { font: 11px/18px verdana, arial, helvetica, sans-serif; padding: 0 6px; }
+div.quoteContainer { background: #DFE7FF; padding: 2px 12px; margin: 25px 0; width: 204px; margin-left: 4px; }
+div#sidebar div.quoteContainer a { padding: 0; color: #5a5a5a; margin-bottom: 10px; font-weight: normal; text-decoration: underline; }
+div#sidebar div.quoteContainer a:hover { background: none; text-decoration: none; }
+.super { font: 10px verdana, arial, sans-serif; color: #E15501; }
+.superNudge { font: 10px verdana, arial, sans-serif; color: #E15501; position: relative; top: -3px; left: 3px; }
+h2#siteName { position: absolute; left: -9999px; margin: 0; }
+body#web-resources ul#resources li h2 { margin-bottom: 0; }
+body#web-resources ul#resources li { font-size: 12px; }
+body#web-resources ul#resources li.linkcat { list-style: none; }
+ul#entryList li { border-bottom: 2px dotted #ccc; padding-bottom: 15px; margin-bottom: 15px; }
+div#searchFormContainer { padding: 20px 10px 20px 15px; background: #e9f1fe; width: 217px; height: 62px; margin-top: 20px; background: url("/wp-content/themes/evohcc/images/searchBg.jpg") no-repeat; }
+div#searchFormContainer label { display: block; padding-bottom: 8px; font-size: 11px; }
+div#searchFormContainer input[type=submit] { background: #1b2e69; color: #fff; font-size: 11px; font-weight: bold; padding: 2px 5px; position: relative; top: -2px; }
+div.moreEventsContainer { margin-top: 25px; }
+div.moreEventsContainer a { font-size: 12px; }
+#extraHdrText { float: right; margin: 16px 15px 0 0; font-size: 18px; color: #ea5924; }
+
+
+
+
+  #pager-container { margin-top: 20px; }
+  .pager a, a.button { padding: 5px 8px; font-size: 10px; background: #eb5500; color: #fff; text-decoration: none; font-weight: bold; border: 1px solid #d24c00; }
+  .pager a:hover, a.button:hover { background: #db4f00; }
+  .nav-previous, .nav-next { float: left; }
+  .nav-previous { margin-right: 10px; }
+  body#speaking-engagements div.event ul.event-info { margin: 0; padding: 0; }
+  .event-info .quote { color: #5a5a5a; }
+  .organization-hdr { margin-bottom: 0; }
+
+#speaking-engagement-listing #menu-item-206 a { background: #0a1d58; color: #fff; }
+
+#services #maincontent p { font-weight: bold; color: #e15501; font-size: 1.1em; }
+#services div#maincontent ul { padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+
+
+/* ============================================================================================================================
+== TWITTER
+** ============================================================================================================================ */
+
+#maincontent #testimonialsholder .example-obtuse p,
+#sidebarTestimonialHolder .example-obtuse p { font-style: italic; padding: 14px 18px; margin: 0; }
+#sidebarTestimonialHolder { margin-left: 5px; }
+#sidebarTestimonialHolder p { padding: 8px 8px 8px 12px; width: 210px; font-size: 11px; line-height: 18px; }
+#sidebarTestimonialSpeaker { font-size: 11px; margin-top: 15px; }
+#sidebarTestimonialLink { display: block; margin: 0; padding: 0; }
+
+.example-obtuse {
+  position:relative;
+  margin:0px 0 0.5em;
+  display: inline-block;
+  color:#fff;
+  background:#ea5924;
+  /* css3 */
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+.example-obtuse p {font-size:13px; line-height:1.25em;}
+
+/* creates the triangle */
+.example-obtuse:after {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  left:50px;
+  color: #ea5924;
+  border:15px solid transparent;
+  border-bottom-color:#ea5924;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.example-obtuse + p {padding-left:15px; font:14px Arial, sans-serif;}

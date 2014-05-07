@@ -1,0 +1,466 @@
+html {
+  height: 101%;
+}
+
+body {
+  font: .625em/1em Verdana, Arial, Helvetica, sans-serif;
+  color: #5a5a5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font: 1.2em/2em Verdana, Arial, Helvetica, sans-serif;
+  margin: 5px 0 10px;
+}
+
+h1 {
+  font: 2.2em/1.4em georgia, "Times New Roman", Times, serif;
+  color: #0a1d58;
+}
+
+h2 {
+  font: bold 1.6em/1.4em georgia, "Times New Roman", Times, serif;
+  color: #0a1d58;
+}
+
+li {
+  background: url(images/plusSign.gif);
+  padding: 0 0 0 10px;
+}
+
+
+/* ------------------------ Main Nav ------------------------------ */
+div#nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 16px;
+  margin: 0px 32px 0 0;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1em;
+}
+
+div#nav a.first {
+  margin-left: 20px;
+}
+
+div#nav a:hover {
+  color: #e15501;
+  background: url(images/blacktriangle.png) no-repeat bottom;
+}
+
+body#index a#index,
+body#about a#about,
+body#services a#services,
+body#experience a#experience,
+body#resources a#resources,
+body#contact a#contact{
+  color: #e15501;
+  background: url(images/blacktriangle.png) no-repeat bottom;  
+}
+
+a {
+  color: #0a1d58;
+}
+
+a:hover {
+  color: #e15501;
+}
+
+
+/* ------------------------ Side Nav ------------------------------ */
+
+div#sidebar a {
+  display: block;
+  color: #999; 
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+body#publications a#publications,
+body#articles a#articles,
+body#testimonials a#testimonials,
+body#webresources a#webresources,
+body#events a#events {
+  color: #fff; 
+  background: #0a1d58;
+}
+
+div#sidebar a:hover {
+  color: #fff; 
+  background: #e15501;
+}
+
+
+/* ------------------------ Footer Nav ------------------------------ */
+div#innerfooter a {
+  color: #0a1d58;
+}
+div#innerfooter a:hover {
+  color: #e15501;
+}
+
+div#maincontent h1 {
+  margin: 0 0 10px 0;
+}
+
+div#maincontent h2 {
+  margin: 20px 0 10px 0;
+}
+
+
+
+/* ------------------------ Header ------------------------------ */
+
+div#outerheader {
+  background: #fff url(images/header_bg.jpg);
+  height: 65px;
+}
+
+div#headershadow {
+  width: 820px;
+  background: #fff url(images/header_bg.jpg);
+  margin: 0 auto;
+  height: 65px;
+}
+
+div#innerheader {
+  background: #fff url(images/header_bg.jpg);
+  height: 65px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#evologo {
+  padding: 12px 0 0 16px;
+}
+
+/* ------------------------ Masthead ------------------------------ */
+
+div#outermasthead {
+  background: #0a1d58 url(images/masthead_bg.jpg);
+  height: 120px;
+}
+
+div#mastheadshadow {
+  width: 820px;
+  background: #0a1d58 url(images/masthead_bg.jpg);
+  margin: 0 auto;
+  height: 120px;
+}
+
+div#innermasthead {
+  background: #0a1d58 url(images/masthead_bg.jpg);
+  width: 800px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+div#innermastheadleft {
+  width: 0px;
+  float: left;
+  background: #e15501;
+  margin-left: 0px;
+}
+
+#loginform {
+  padding: 10px;
+  color: #fff;
+}
+
+#loginform table td {
+  padding: 2px 0;
+}
+
+#loginform table th {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+input {
+  background: #ebf0ff;
+}
+
+#loginbutton {
+  background: #fff;
+  color: #0a1d58;
+  font: .9em Verdana, Arial, Helvetica, Sans-serif;
+  text-transform: uppercase;
+}
+
+div#mastheadimage {
+  margin: 0 auto;
+  width: 770px;
+}
+
+
+
+
+/* ------------------------ Main Content ------------------------------ */
+
+div#outermaincontent {
+  background: #fff;
+}
+div#maincontentshadow {
+  width: 820px;
+  background: #fff url(images/maincontent_bg.jpg);
+  margin: 0 auto;
+}
+div#innermaincontent {
+  background: #fff;
+  width: 800px;
+  margin: 0 auto;
+}
+div#maincontent {
+  background: #fff;
+  width: 510px;
+  float: left;
+  padding: 20px; 
+  margin: 0 0 60px 0;
+}
+
+div#maincontent div#testimonials h1 {
+  margin: 12px 0 0 0;
+}
+
+div#maincontent ul {
+  list-style: none;
+  padding: 10px 0 10px;
+}
+
+div#maincontent ul li {
+  font: 1.2em/2em Verdana, Arial, Helvetica, sans-serif;
+  color: #5a5a5a;
+}
+
+.plussign {
+  color: #e15501;
+}
+
+/* ------------------------------ Sidebar ----------------------------------*/
+
+div#sidebar {
+  background: #fff;
+  width: 250px;
+  float: right;
+  text-align: left;
+}
+
+div#news {
+  width: 237px;
+  height: 252px;
+  background: #fff url(images/news_bg.jpg) no-repeat;
+  margin: 20px 0 0 0;
+}
+
+div#sidebar {
+  color: #5a5a5a;
+}
+
+div#sidebar ul li{
+  height: 3em;
+}
+
+div#testimonialholder {
+  padding: 2px;
+  border: 1px solid #ccc;
+  margin: 30px 0;
+  overflow: auto;
+  width: 475px;
+}
+
+div#testimonialimage {
+  width: 275px;
+  float: left;
+}
+
+body#services div#testimonialimage, body#resources div#testimonialimage {
+  width: 225px;
+}
+
+div#testimonialquote {
+  background: url(images/testimonial_thumb_bg.jpg) no-repeat;
+  width: 200px;
+  height: 127px;
+  float: right;
+}
+
+body#services div#testimonialquote, body#resources div#testimonialquote {
+  background: url(images/testimonial_thumb_big_bg.jpg) no-repeat;
+  width: 250px;
+}
+
+div#testimonialholder p.quote {
+  font: bold 1.1em/1.8em verdana, arial, helvetica, sans-serif;
+  color: #fff;
+  padding: 10px 10px 0;
+  margin: 15px 0 0 0;
+}
+
+div#testimonialholder h1 {
+  font: bold 1em/1.8em verdana, arial, helvetica, sans-serif;
+  color: #fff;
+  padding: 0 10px;
+  margin: 0;
+}
+
+body#testimonials div#imageholder {
+  width: 219px;
+  height: 226px;
+}
+
+body#testimonials div#imageholder p {
+  font: 1em helvetica, arial, verdana, sans-serif;
+  width: 400px;
+  padding: 4px 0 0 0;
+  margin: 0;
+}
+
+div#news ul {
+  padding: 60px 7px 20px 4px;
+  list-style: none;
+}
+
+div#news ul li.oddrow {
+  background: #fff;
+}
+
+div#news ul li.evenrow {
+  background: #f8f8f8;
+}
+
+div#extras {
+  width: 237px;
+  height: 252px;
+  background: #fff url(images/extras_bg.jpg) no-repeat;
+  margin: 20px 0 0 0;
+}
+
+div#extras ul {
+  padding: 60px 7px 20px 4px;
+  list-style: none;
+}
+
+div#extras ul li.oddrow {
+  background: #fff;
+}
+
+div#extras ul li.evenrow {
+  background: #f8f8f8;
+}
+
+
+/* ------------------------------ Footer ----------------------------------*/
+
+div#outerfooter {
+  background: #eaedf0 url(images/footer_bg.jpg) repeat-x;
+  height: 125px;
+  clear: both;
+}
+
+div#footershadow {
+  width: 820px;
+  height: 125px;
+  background: #eaedf0 url(images/footer_bg.jpg) repeat-x;
+  margin: 0 auto; 
+}
+
+div#innerfooter {
+  background: #eaedf0 url(images/footer_bg.jpg) repeat-x;
+  width: 800px;
+  margin: 0 auto;
+}
+
+div#nav ul {
+  list-style: none;
+}
+
+div#nav ul li {
+  display: inline;
+  color: #fff;
+}
+
+div#innerfooter ul li {
+  display: inline;
+  padding: 0 10px 0;
+  border-right: 1px solid #0a1d58;
+  color: #0a1d58;
+}
+
+div#innerfooter ul li.first {
+  padding-left: 0px;
+}
+
+div#innerfooter ul li.last {
+  border-right: 0;
+}
+
+div#innerfooter ul {
+  padding: 20px 20px 0 20px;
+}
+
+div#navshadow {
+  width: 820px;
+  margin: 0 auto;
+  background: #fff url(images/navcontainer_bg.gif) repeat-x;
+}
+
+div#navcontainer {
+  background: #fff url(images/navcontainer_bg.gif) repeat-x;
+  margin: 0 auto;
+  width: 800px;
+  padding: 10px 0;
+  height: 30px;
+}
+
+div#outernav {
+  background: #fff url(images/navcontainer_bg.gif) repeat-x;
+}
+
+.border {
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+
+.cokerlogo {
+  margin: 25px 0 10px 0;
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+
+div#testimonials p.quote, div.publications p.title {
+  font: italic 1.7em/1.5em times "times new roman" serif;
+  margin-top: 10px;
+}
+
+div#testimonials img, div.publications img {
+  padding: 2px;
+  border: 1px solid #ccc;  
+}
+
+div#testimonials img.noborder, div#publications img.noborder {
+  padding: 0;
+  border: 0;  
+}
+
+div.testimonial, div.publications, div.event {
+  border-bottom: 1px solid #ccc;
+  padding: 40px 20px 20px;
+}
+
+div#maincontent h3.quoted {
+  margin: 0;
+  color: #0a1d58;
+  font: italic 1.4em times "times new roman" serif;
+}
+
+div#testimonials p, div#publications p {
+  margin: 22px 0;
+}
